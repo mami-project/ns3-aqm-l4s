@@ -8,3 +8,6 @@ Arguments are 'number of low-latency flows' [1,5,10] and 'number of classic flow
 plot-per-tcpconf-[dq,dq-sca,l4s,sq](-lte).py
 Plots  performance for distinct TCP configuration for Dual Queue (Uncoupled) with and without scalable congestion control, DualQ Coupled (L4S) and Single Queue for normal and LTE case.
 Arguments are 'classic congestion control' [reno,cubic], 'low-latency congestion control' [dctcp,relentless] and ECN [0,1] in that order.
+
+l4s.sql
+Contains SQL database with results and results_lte from my simulations
