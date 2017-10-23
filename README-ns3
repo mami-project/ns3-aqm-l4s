@@ -6,6 +6,11 @@ ipv4-queue-disc-item.cc/.h
 Move to ns-3.xx/src/internet/model
 Contains implementation of ECN marking (was not yet included in 3.26)
 
+ptr.h
+Move to ns-3.xx/src/core/model
+Contains function to freely move pointers
+Necessary for LTE simulations where the connection between the two queues (bearers) is set up by moving pointers around
+
 lte-rlc-um.c/.h
 Move to ns-3.xx/src/lte
 Contains AQM implementations for LTE
