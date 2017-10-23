@@ -10,4 +10,16 @@ lte-rlc-um.c/.h
 Move to ns-3.xx/src/lte
 Contains AQM implementations for LTE
 
+my-sims
+Move to ns-3-dce/myscripts
+Contains simulation set-ups for normal and LTE case
+Paramters for static channel simulations are given through ns-3 interface (see lines 133-144 from my-sims/my-sims.py).
+Some parameters for LTE simulations are given through ns-3 interface as well. AQM parameters have to be given through command promt at runtime. Paramters always have to be given in the form a,b,c,d,e,f as a string
+a=L4S used [0,1]
+b=PIE or RED [0 (for PIE),1 (for RED)]	(not important if L4S is used)
+c=scalable cc used [0,1]		(not important if L4S or PIE is used)
+d=number of low-latency flows [integer]	(not important if L4S is used)
+e=number of classic flows [integer]	(not important if L4S is used)
+f=reference delay in ms [double]	(not important if L4S is used)
+
 
