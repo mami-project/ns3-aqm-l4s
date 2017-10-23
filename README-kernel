@@ -1,0 +1,17 @@
+The standard ns-3.26 has only the kernel version 2.6.36 included
+For the installation of other kernels see
+https://de.slideshare.net/hajimetazaki/wns3-15dcetutorial
+
+My changes of the kernel are based on the version 4.7.0-rc5 from the tutorial above
+
+inet_ecn.h
+Move to the include/net folder of the original kernel code
+Changes the ECT(0) to the ECT(1) bit
+
+tcp_ipv4.c
+Move to the net/ipv4 folder of the original kernel code
+Makes the kernel dump the congestion window into the kernel log file
+
+tcp_dctcp.c
+Move to the net/ipv4 folder of the original kernel code
+Changes the DCTCP congestion control to Relentless
