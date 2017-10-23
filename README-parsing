@@ -1,0 +1,17 @@
+parse-qDelay.py
+Parses output files of queue delay.
+
+parse-throughput.py
+Parses output file of throughput.
+
+parse-cwnd.py
+Parses output files of congestion window.
+
+parse-actions.py
+Parses output files of actions.
+
+These have to be called in this order to have the correct order for parsing into SQL data base
+
+parse-mysql(-lte).py
+Parses previously created file into SQL data base for normal and LTE case.
+Argument is the folder of where the result files of the simulation are stored (without trailing slash, e.g. /home/user/results-xx-yy).

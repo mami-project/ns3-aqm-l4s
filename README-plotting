@@ -1,0 +1,10 @@
+compare-[ccC,ccL,ecn](-lte).py
+Comparison plots for differen congestion controls on classic flows and low-latency flows and for ECN turned on or off on classic flows for normal and LTE case.
+
+plot-per-flowconf-[dq,dq-sca,l4s,sq](-lte).py
+Plots performance for distinct flow configuration for Dual Queue (Uncoupled) with and without scalable congestion control, DualQ Coupled (L4S) and Single Queue for normal and LTE case.
+Arguments are 'number of low-latency flows' [1,5,10] and 'number of classic flows' [1,5,10] in that order.
+
+plot-per-tcpconf-[dq,dq-sca,l4s,sq](-lte).py
+Plots  performance for distinct TCP configuration for Dual Queue (Uncoupled) with and without scalable congestion control, DualQ Coupled (L4S) and Single Queue for normal and LTE case.
+Arguments are 'classic congestion control' [reno,cubic], 'low-latency congestion control' [dctcp,relentless] and ECN [0,1] in that order.

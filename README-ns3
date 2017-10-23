@@ -1,0 +1,13 @@
+traffic-control
+Move to folder ns-3.xx/src/
+Contains AQM implementations
+
+ipv4-queue-disc-item.cc/.h
+Move to ns-3.xx/src/internet/model
+Contains implementation of ECN marking (was not yet included in 3.26)
+
+lte-rlc-um.c/.h
+Move to ns-3.xx/src/lte
+Contains AQM implementations for LTE
+
+
